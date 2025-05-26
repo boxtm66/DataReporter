@@ -108,5 +108,7 @@ add_library( # Sets the name of the library.
 target_link_libraries( # Specifies the target library.
         data-reporter
         z
-        #${log-lib}
+        log
+        "-Wl,-z,max-page-size=16384"
+        "-Wl,-z,common-page-size=16384"
         )
