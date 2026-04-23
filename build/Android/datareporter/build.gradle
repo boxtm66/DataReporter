@@ -14,6 +14,7 @@ ext {
 
 android {
     compileSdkVersion 32
+	ndkVersion "22.1.7171670"
 
     defaultConfig {
         minSdkVersion 19
@@ -109,12 +110,15 @@ android {
         }
     }
 
-    ndkPath "/Users/clark/programs/android-ndk-r22b"
+    // ndkPath "/Users/clark/programs/android-ndk-r22b"
+	// ndkPath "/Users/clark/programs/android-ndk-r22b"
+    // ndkPath "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\22.1.7171670"
 
     externalNativeBuild {
         cmake {
             path "CMakeLists.txt"
-			version "3.10.2"
+			// version "3.10.2"
+			version "3.18.1"
         }
     }
 	
